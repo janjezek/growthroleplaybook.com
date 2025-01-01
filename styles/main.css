@@ -1,0 +1,132 @@
+/* Custom properties */
+:root {
+    --bs-primary: #1A237E;
+    --bs-primary-rgb: 26, 35, 126;
+    --bs-accent: #FF5252;
+}
+
+/* Typography */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+/* Container width */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+/* Hero section */
+.hero {
+    background-color: var(--bs-gray-100);
+    padding-top: 76px;
+}
+
+.hero h1 {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.hero .lead {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+/* Cards hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+section h2 {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+/* Social links */
+.social-links a {
+    color: var(--bs-primary);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--bs-accent);
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #283593;
+    border-color: #283593;
+}
+
+/* Author section */
+.author img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.author .lead {
+    font-weight: 300;
+}
+
+/* Price display */
+.display-4 {
+    font-weight: 900;
+    color: var(--bs-primary);
+}
+
+/* Testimonial cards */
+.testimonial-card {
+    font-style: italic;
+}
+
+/* Badge styling */
+.badge {
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    
+    .hero img {
+        margin-top: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}

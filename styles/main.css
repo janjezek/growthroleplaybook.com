@@ -27,10 +27,35 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.9) !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar-brand {
     font-weight: 900;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar .btn-primary {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+    
+    .navbar .btn-primary {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
 }
 
 /* Hero section */
@@ -47,6 +72,33 @@ h1, h2, h3, h4, h5, h6 {
 .hero .lead {
     font-weight: 300;
     font-size: 1.3rem;
+}
+
+.hero .text-primary {
+    font-size: 1.1rem;
+}
+
+.hero small {
+    font-size: 0.9rem;
+}
+
+.hero img {
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Book images common styles */
+.hero img, #about img {
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover, #about img:hover {
+    transform: perspective(1000px) rotateY(0deg);
 }
 
 /* Cards hover effect */
@@ -116,6 +168,43 @@ section h2 {
     padding: 0.5em 1em;
 }
 
+/* Stats section */
+.stats-icon {
+    font-size: 2.5rem;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+}
+
+.stats-label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* About section */
+.feature i {
+    font-size: 1.25rem;
+}
+
+#about .lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--bs-gray-700);
+}
+
+#about img {
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero {
@@ -128,5 +217,17 @@ section h2 {
 
     .hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .stats-number {
+        font-size: 2rem;
+    }
+    
+    .stats-icon {
+        font-size: 2rem;
+    }
+    
+    .stats-label {
+        font-size: 0.9rem;
     }
 }

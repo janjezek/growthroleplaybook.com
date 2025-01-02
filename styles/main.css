@@ -254,6 +254,49 @@ section h2 {
     line-height: 1.6;
 }
 
+/* What's Inside section */
+.content-card {
+    background: white;
+    padding: 2rem;
+    height: 100%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.part-number {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.chapter-list li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: var(--bs-gray-700);
+    border-bottom: 1px solid var(--bs-gray-200);
+}
+
+.chapter-list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .chapter-list li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero {
